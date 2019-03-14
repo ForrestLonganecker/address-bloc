@@ -12,6 +12,7 @@ module.exports = class MenuController {
                     "Add new contact",
                     "View all contacts",
                     "Search for a contact",
+                    "Check current date/time",
                     "Exit"
                 ]
             }
@@ -33,6 +34,8 @@ module.exports = class MenuController {
                     break;
                 case "Search for a contact":
                     this.search();
+                case "Check current date/time":
+                    this.getDate();
                     break;
                 default:
                     console.log("Invalid input");
@@ -151,5 +154,13 @@ module.exports = class MenuController {
             console.log(err);
             this.main();
         });
+    }
+    
+    getDate(){
+        let d = new Date();
+
+        this.clear();
+        console.log(`It is currently: ${d.toUTCString()}`)
+        this.main();
     }
 };
