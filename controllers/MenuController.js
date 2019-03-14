@@ -34,6 +34,7 @@ module.exports = class MenuController {
                     break;
                 case "Search for a contact":
                     this.search();
+                    break;
                 case "Check current date/time":
                     this.getDate();
                     break;
