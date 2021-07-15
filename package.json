@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^5.1.0",
+    "inquirer": "^8.1.2",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
     "sequelize": "^6.0.0"
